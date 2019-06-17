@@ -1,0 +1,32 @@
+.deal {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h4 {
+        text-align: center;
+        padding: 20px;
+        font-size: 2em;
+    }
+
+    ul {
+        width: 50vw;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1.2em;
+        padding: 10px;
+        transition: 0.3s;
+
+        &:hover {
+            margin-left: 20px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.form.size {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    background-color: rgb(221, 218, 218);
+    border-bottom: 5px solid #ffa600;
+
+    @media (min-width: 1600px) {
+        height: 15vh;
+    }
+
+    @media (min-width: 900px) and (max-width: 1099px) {
+        height: 20vh;
+    }
+
+
+    .form-holiday {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        position: absolute;
+        top: -50%;
+        width: 60vw;
+        height: 20vh;
+        padding: 20px;
+        background-color: #f3f0f0;
+        border: 5px solid #ffa600;
+        border-radius: 5px;
+        -webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
+
+        @media (min-width: 1600px) {
+            height: 15vh;
+            width: 50vw;
+        }
+
+        @media (min-width: 900px) and (max-width: 1099px) {
+            width: 50vw;
+        }
+
+
+        .submit-change {
+            background-color: #ffa600;
+            width: 15vw;
+            height: 7vh;
+            border: none;
+            border-radius: 5px;
+
+            @media (min-width: 1600px) {
+                height: 5vh;
+                width: 10vw;  
+            }
+
+        }
+
+        .country {
+            height: 30%;
+            padding: 20px;
+            height: 7vh;
+            border-radius: 5 px;
+
+            @media (min-width: 1600px) {
+                height: 5vh;
+                width: 15vw;  
+            }
+
+        }
+
+
+        .date {
+            display: flex;
+            width: 60%;
+
+            form {
+                width: 50%;
+            }
+
+            
+        }
+
+    .price {
+        width: 30%;
+        height: 7vh;
+        margin-top: 5px;
+    }
+    }
+}
+
+
+
+
+ 
+    

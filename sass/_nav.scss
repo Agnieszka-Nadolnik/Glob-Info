@@ -1,0 +1,103 @@
+body {
+    position: relative;
+}
+.menu {
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    height: 7vh;
+    color: #f3f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+    .logo {
+        width: 10vw;
+        font-size: 1.5em;
+
+        @media (min-width: 900px) and (max-width: 1099px) {
+         font-size: 1.2em;       
+        }
+       }
+}
+   
+ 
+.menu-nav {
+    width: 70vw;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            font-size: 1.5em;
+            list-style: none;
+            width: 20vw;
+            text-align: center;
+            border-left: 1px solid #f3f0f0;
+            border-right: 1px solid #f3f0f0;
+            border-bottom: 1px solid transparent;
+            border-top: 1px solid transparent;
+            padding-top: 5px;
+            transition: .5s;
+
+            @media (min-width: 900px) and (max-width: 1099px) {
+                font-size: 1.2em;   
+            }
+            &:hover {
+                border-bottom: 1px solid #f3f0f0;
+                border-top: 1px solid #f3f0f0;
+            }
+            
+            &:nth-child(2),
+            &:nth-child(3) {
+                border-left: none;
+            }
+        }
+    } 
+}
+
+
+.nav-icon {
+    margin: 1em;
+    width: 40px;
+    cursor: pointer;
+
+    &::after, 
+    &:before, 
+    div {
+      background-color: #f3f0f0;
+      border-radius: 3px;
+      content: '';
+      display: block;
+      height: 5px;
+      margin: 7px 0;
+      transition: all .2s ease-in-out;
+
+    }
+
+    &:hover:before {
+        transform: translateY(12px) rotate(135deg);
+      }
+      
+    &:hover:after {
+        transform: translateY(-12px) rotate(-135deg);
+      }
+      
+    &:hover div {
+        transform: scale(0);
+      }
+  }
+
+  .fixed-nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  
+  
+ 
+
+  
